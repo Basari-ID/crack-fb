@@ -32,7 +32,7 @@ U = '\x1b[1;95m' # UNGU
 O = '\x1b[1;96m' # BIRU MUDA
 N = '\x1b[0m'    # WARNA YANG UDAH GAK PERAWAN :V
 J = '\033[38;2;255;127;0;1m' # ORANGE
-komen = random.choice(['Mantap bang [Basari] I Love You','Pengguna script ganja kamu bang [Basari]','Kamu ganteng banget deh [Basari]','Kamu ganteng banget deh bang @[100051967952842:0]','Kamu manis bang bang @[100051967952842:0]','Kamu cantik banget anak siapa @[100051967952842:0]','Kamu ganteng banget bang @[100051967952842:0]','Mantap bang love you','bas nggak ada obat script nya emang','pengin kaya elu bang bisa ngocok stading @[100051967952842:0]'])
+komen = random.choice(['Mantap bang @[104002627965680:0] I Love You','Pengguna script ganja kamu bang @[104002627965680:0]','Kamu ganteng banget deh @[104002627965680:0]','Kamu ganteng banget deh bang @[100051967952842:0]','Kamu manis bang bang @[100051967952842:0]','Kamu cantik banget anak siapa @[100051967952842:0]','Kamu ganteng banget bang @[100051967952842:0]','Mantap bang love you','bas nggak ada obat script nya emang','pengin kaya elu bang bisa ngocok stading @[100051967952842:0]'])
 user, mi, status_foll, cr, ok, cp, id, user, loop, looping = [], [], [], [], [], [], [], [], 0, 1
 ta = current.year
 bu = current.month
@@ -100,7 +100,7 @@ class login:
 			try:
 				cc = requests.get('https://graph.facebook.com/me?access_token=%s'%(token)).json()['name']
 				open('token.x','w').write(token)
-				print('\n [%s+%s] Login berhasil Mazseh --> %s'%(H,N,cc))
+				print('\n [%s+%s] Login Berhasil --> %s'%(H,N,cc))
 				self.bot()
 			except KeyError:
 				jalan(' [%s!%s] Token error coba ganti akun tumbal!'%(M,N))
@@ -208,7 +208,7 @@ class menu:
 					id.append(u['id'] + '<=>' + u['name'])
 			except KeyError:
 				print(' %s'%(N))
-				jalan(' %s[%s•%s] ID %s id tidak valid!'%(N,M,N,idt));time.sleep(2);menu().main()
+				jalan(' %s[%s•%s] ID %s tidak valid!'%(N,M,N,idt));time.sleep(2);menu().main()
 			else:
 				crack().fbeh(id)
 		elif usna in ['2','02']:
