@@ -1,5 +1,5 @@
-#CODING BY UTF-8
-#notwork
+#CODING BY BAS
+#anjay ngapain kesini
 #sc ampas ini hehe
 
 import os, sys, time, re, json, requests, bs4, random, calendar, datetime,subprocess, logging
@@ -71,6 +71,11 @@ def folder():
 
 def banner():
 	print('''%s
+	◢████◣░█████◣
+	██░░░░░██░░█◤
+	████◤░░█████◣
+	██░░░░░██░░██ 
+	█◤░░░░░█████◤v1
 _______  ______ _______ _______ _     _ _______  ______
 |       |_____/ |_____| |       |____/  |______ |_____/
 |_____  |    \_ |     | |_____  |    \_ |______ |    \_
